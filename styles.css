@@ -1,307 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
   font-family: 'Inter', sans-serif;
-  padding: 0;
-  margin: 0;
-  margin-left: 0;
+  padding: 0 !important;
+  margin: 0 !important;
   box-sizing: border-box;
 }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;
-}
-landing {
-    display: block;
-    flex: 1;
-    align-items: left;
-    padding: 10px auto;
-    margin-left: 55px;
-    margin-right: 55px;
-    width: 100%;
-    height: auto;
-  
-}
-
-h2, h3, h4,h5, h6, span {
-
-  color: rgb(36, 62, 99);
-  text-align: center;
-  line-height: 1.25;
-}
-
-p {
-  line-height: 1.5;
-  font-size: 16px;
-}
-
-/* 
-
-NAVAGATION BAR 
-
-*/
-
-
-.row {
-  width: 100%;
-  height: 100px;
-}
-
 .nav__row {
-  display:flex;
-  justify-content: space-between;
-  padding-top: 12px
-  
-}
-
-.nav__logo {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-  margin-right: 0px;
-  
-
-}
-
-.nav__logo--title {
-    box-sizing: border-box;
-    color: rgb(36, 62, 99);
-    display: block;
-    height: 31.5px;
-    font-size: 24px;
-    font-weight: 900;
-    letter-spacing: 0.6px;
-    margin-bottom: 0px;
-    margin-left: 12px;
-    margin-right: 0px;
-    margin-top: 0px;
-    padding-bottom: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    width: 81.5469px;
-    position: relative;
-    top: 6px;
-    
-}
-
-.nav__links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 0px 20px 0px;
-    list-style-type: none;
-
-  
-}
-.nav__link {
-  color: rgb(36, 62, 99);
-  display: block;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 0.90;
-  margin: 0 24px;
-  margin-bottom: 0;
-  margin-left: 48px;
-  margin-right: 24px;
-  padding: 4px 0 0;
-  text-decoration-line: none;
   position: relative;
-}
-
-.bold:hover {
-    text-decoration: underline;
-    text-decoration-color:rgb(100, 21, 255);
-    text-underline-offset: 8px;
-    
-}
-
-.nav__container {
-    width: 100%;
-    height: 100%;
-}
-.video__container {
-  position: relative;
-  align-items: flex-start;
   width: 100%;
-  height: 300px;
+  height: 100vh;
   overflow: hidden;
-  display: block;
+  /* Centering the column of links */
+  display: flex;
+  align-items: center; 
+  justify-content: center;
 }
-.nav__overlay {
+
+/* Background Image Layer */
+.nav__background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10; /* Ensures the nav stays on a higher layer than the video */
-  /* padding: 20px; */
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  
-}
-.nav__overlay a {
-    display: flex;
-    flex-grow: 100%;
-  color: red !important;
-  /* background-color: black; */
-  text-decoration: none;
-  margin: 30px;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Helps text stand out against video */
-  /* width: 40px;
-  height: 40px; */
-  z-index: 20;
-}
-#landing__video {
-  width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
-  /* margin: -300px; */
-  object-fit: cover; /* Ensures the video covers the div without stretching */
+  z-index: 1; /* Sits at the very back */
   /* display: none; */
 }
 
-.nav__logo--img {
+.nav__background--image {
   width: 100%;
-  height: 40px;
+  height: 100%;
+  object-fit: cover; /* Prevents the image from being squished */
 }
-
-/* a {
-    text-decoration: none;
-    position: relative;
-    transition: opacity 300ms ease; */
-
-
-.nav__link--anchor-primary,
-quality__:hover {
-    background-color: rgb(80, 17, 204);
-} */
-
-/*
-
-HEADER
-
-*/
-
-.row {
-
-}
-.purple {
-  color: #6415ff;
-}
-span1 {
-  color: #6415ff;
-}
-
-.left-div-1 {
-    display: flex;
-    text-align: left;
-    box-sizing: border-box;
-    font-size: 38px;
-    font-weight: 700;
-    padding-top: 60px;
-    text-indent: 0;
-    width: 100%;
-    padding-bottom: 12px;
-    color:rgb(11, 14, 19);
-    line-height: 1.18;
-    letter-spacing: 2.25;
-    text-decoration: none;
-
-}
-
-.left-section {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    width: 40%;
-    margin: 0;
-  }
-
-.left-div-2 {
-      width: 100%;
-      /* border: 1px solid green; */
-      padding: 5px;
-      margin-bottom: 5px; /* Space between the two left divs */
-}
-
-  .right-section {
-    display: flex;
-    flex-direction: column;
-    justify-self: end;
-    flex: 1;
-    width: 80%;
-    transform: translate(260px);
-
-}
-
-.header__container {
-    position: relative;
-    border-style: solid;
-    border: 2px solid  #e9e6e6;
-    color:rgb(150, 147, 147);
-    width: 400px;
-    padding: 22px;
-    margin-bottom: 15px;
-    border-radius: 100px;
-        }
-  
-   /* text-decoration: none; to remove underline*/
-
-.signup-button {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    top: 7%;
-    left: 54%;
-    z-index: 1;
-    white-space: nowrap;
-    background-color: rgb(100, 21, 255); /* Blue background */
-    color: white;              /* White text color */
-    padding: 18px 90px;        /* Padding around the text */
-    border: none;              /* Remove default border */
-    border-radius: 100px;        /* Rounded corners */
-    cursor: pointer;           /* Change cursor to a hand on hover */
-    width: 20%;               /* Full width of the form container */
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.3s ease; /* Smooth color transition on hover */
-}
-
-.signup-button:hover {
-    background-color: rgb(80, 17, 204); /* Darker blue on hover */
-}
-
-.header__customers--title {
-    width: 400px;
-    font-size: 12px;
-    font-weight: 800;
-    opacity: calc(30%);
-    padding-top: 50px;
-}
-.left__header--img {
-    padding-top: 12px;
-    width: 75%;
-    opacity: calc(50%);
-}
-
-.right__header--img {
-    margin: 16px;
-    justify-self: end;
-    width: 70%;
-    flex: 1;
-    overflow: hidden;
-    padding-right: 40px;
-    
+.nav__background, .video__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 
-.header__description--para {
-    color: #243e63;
-    text-align: left;
-    padding-bottom: 24px;
-} 
+
+/* Video Layer with Reduced Height */
+.video__wrapper {
+  position: absolute;
+  z-index: 2;;
+  width: 100%; /* Optional: reduce width to see more background on sides */
+  top: 0;
+  left: 0;
+  height: 60vh; /* REDUCE THIS VALUE to change video height (e.g., 400px or 50vh) */
+}
+
+#landing__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents video from stretching/distorting */
+  /* display: none; */
+}
+
+.nav__link--list {
+  position: relative; /* REQUIRED for z-index to work */
+  z-index: 10; /* Higher than video (2) */
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* Column stack */
+  align-items: center; /* Center horizontally */
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  color: white; /* Make sure they aren't black (invisible on dark video) */
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 10px;
+  display: block;
+}

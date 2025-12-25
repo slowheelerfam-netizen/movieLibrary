@@ -10,31 +10,45 @@
 </head>
 <body>
     <section id="landing">
-        <nav>
-            <div class="nav__container">
-              <!-- <img class="nav__logo--img" src="./assets/Saturn_beach.jpeg" alt=""> -->
-               <div class="video__container">
-                <video autoplay muted loop playsinline id="landing__video">
-                    <source src="./assets/Untitled.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                </video>
-                <nav class="nav__overlay">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Contact</a>
-                </nav>
-            </div>
-        </nav> 
         <header>
-            <div class="header__container">
-                <div class="header__description">
-                 <h1>America's most awarded online library platform</h1>
-                 <h2>Find your dream book with <span class="purple">Library</span><br><br></h2>
-                 <button class="btn">Browse books</button><br>
+            <div class="row">
+            <div class="nav__row">
+                <div class="nav__background">
+                    <img src="./assets/RedChairs.jpeg" alt="" class="nav__background--image">
                 </div>
-            <figure class="header__img--wrapper">
-                <img src="./assets/Undraw_Books.svg" alt="book image">
-            </figure>
+                <div class="video__wrapper">
+                    <video autoplay muted loop playsinline oncanplay="this.muted=true" id="landing__video">
+                    <source src="./assets/Untitled.mp4" type="video/mp4">
+                    </video>
+                </div>
+                
+                <ul class="nav__link--list">
+        <li><a href="#" class="nav__link">Home</a></li>
+        <li><a href="#" class="nav__link">About</a></li>
+        <li><a href="#" class="nav__link">Contact</a></li>
+    </ul>
+</div>
+                        <button class="btn">
+                        <span class="btn__para">Actor, Title, Keyword</span>
+                        </button>
+                    </nav>
+                </div>
             </div>
-        </header>
+        </div>
+    </header>
     </section>
+    <section id="main">
+        <main>
+            <div class="main__container">
+                <div class="main__description">
+                    <h1></h1>
+                    <h2> 
+                        <span class="purple"></span><br><br></h2>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+    </main>
+    </section>
+</body>
