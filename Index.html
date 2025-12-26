@@ -10,32 +10,56 @@
 </head>
 <body>
     <section id="landing">
-        <header>
-            <div class="row">
+        <header></header>
+    <nav>
+        <div class="row">
             <div class="nav__row">
                 <div class="nav__background">
                     <img src="./assets/RedChairs.jpeg" alt="" class="nav__background--image">
-                </div>
-                <div class="video__wrapper">
-                    <video autoplay muted loop playsinline oncanplay="this.muted=true" id="landing__video">
-                    <source src="./assets/Untitled.mp4" type="video/mp4">
-                    </video>
-                </div>
-                
-                <ul class="nav__link--list">
-        <li><a href="#" class="nav__link">Home</a></li>
-        <li><a href="#" class="nav__link">About</a></li>
-        <li><a href="#" class="nav__link">Contact</a></li>
-    </ul>
-</div>
-                        <button class="btn">
-                        <span class="btn__para">Actor, Title, Keyword</span>
-                        </button>
-                    </nav>
+                        </div>
+                        <div class="video__wrapper">
+                            <video autoplay muted loop playsinline oncanplay="this.muted=true" id="landing__video">
+                            <source src="./assets/Untitled.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="nav__container">
+                            <div class="nav__links">
+                                <h1 class="nav__title--text">CINEMAGIC</h1>
+                                <ul class="nav__link--list">
+                                    <li><a href="#" class="nav__link">Top 10 Most Popular Movies</a></li>
+                                    <li><a href="#" class="nav__link">About</a></li>
+                                    <li><a href="#" class="nav__link">Contact</a></li>
+                                </ul>                          
+                            </div>
+                            <div class="search__container">
+                                <form action="/search" method="GET" class="search__form">
+                                    <!-- Category Dropdown -->
+                                    <label for="search-category" class="sr-only">Search Category</label>
+                                    <!-- <select id="search-category" name="category" class="search__select">
+                                        <option value="title">Title</option>
+                                        <option value="actor">Actor</option>
+                                        <option value="keyword">Genre</option>
+                                    </select> -->
+
+                                    <!-- Search Input -->
+                                    <label for="movie-search" class="sr-only">Search text</label>
+                                    <input 
+                                        type="text" 
+                                        id="movie-search" 
+                                        name="query" 
+                                        placeholder=".   Title, Actor, Genre..." 
+                                        required
+                                    >
+                                    
+                                    <button type="submit" class="btn btn--search">Search</button>
+                                </form>
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
+        
     </section>
     <section id="main">
         <main>
