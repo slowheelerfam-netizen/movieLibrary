@@ -42,7 +42,8 @@ body {
 }
 
 .nav__logo {
-    margin-left: 15px;
+    margin-left: 16px;
+    margin-top: 16px;
     width: 125px;
     height: auto;
 }
@@ -57,9 +58,9 @@ body {
 
 .nav__title--text {
     font-size: clamp(32px, 8vw, 48px);
-    margin-left: 115px;
+    margin-left: 185px;
     font-weight: bold;
-    background: linear-gradient(to right, #ff7e5f, #feb47b, #86e3ce);
+    background: linear-gradient(to right, #ff7e5f, #feb47b, #3dc1ea);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
