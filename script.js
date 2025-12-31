@@ -1,4 +1,4 @@
-// 1. Constants and Configuration
+
 const API_KEY = '4fa5e77d7951d0814bdcf9fe8a45e8bb'; 
 const BASE_URL = 'https://api.themoviedb.org/3/search/movie'; 
 const IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500';
@@ -34,22 +34,22 @@ async function searchMovies() {
 
 const searchInput = document.getElementById('searchQuery');
 
-// Listen for any key being pressed while inside the input box
+
 searchInput.addEventListener('keydown', function(event) {
-    // Check if the key pressed was 'Enter'
+   
     if (event.key === 'Enter') {
-        event.preventDefault(); // Prevents page reload
-        searchMovies();         // Calls your existing function
+        event.preventDefault(); 
+        searchMovies();         
     }
 });
 
 async function getTopTenPopular() {
     const movieGrid = document.getElementById('movieGrid');
-    // 1. Set the correct endpoint for Popular movies
+    
     const POPULAR_URL = "https://api.themoviedb.org/3/movie/popular";
 
     try {
-        // 2. Remove the 'query' parameter; only need api_key and basic settings
+       
         const url = `${POPULAR_URL}?api_key=${API_KEY}&language=en-US&page=1`;
         const response = await fetch(url);
         
@@ -64,10 +64,10 @@ async function getTopTenPopular() {
             return;
         }
 
-        // 3. Slice the first 10 movies from the popular list
+   
         const topTenMovies = data.results.slice(0, 10);
 
-        // 4. Pass to your existing display function
+  
         displayMovies(topTenMovies);
 
     } catch (error) {
@@ -76,9 +76,6 @@ async function getTopTenPopular() {
     }
 }
 
-
-
-// ... existing constants ...
 
 async function openMovieDetails(movieId) {
     const modal = document.getElementById('movieModal');
@@ -89,7 +86,7 @@ async function openMovieDetails(movieId) {
     detailsDiv.innerHTML = '<p>Loading details...</p>';
 
     try {
-        // Fetch specific movie details using movie ID
+   
         const url = `api.themoviedb.org{movieId}?api_key=${API_KEY}&language=en-US`;
         const response = await fetch(url);
         const movie = await response.json();
@@ -117,7 +114,7 @@ function closeModal() {
 }
 
 
-// UPDATE: Add onclick to your existing displayMovies function
+
 function displayMovies(movies) {
     const movieGrid = document.getElementById('movieGrid');
     if (!movies || movies.length === 0) {

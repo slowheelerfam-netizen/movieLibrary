@@ -18,35 +18,31 @@ body {
 /* --- Navigation & Header --- */
 .library__wrapper {
     display: flex;
-    /* align-items: flex-end; <-- Change this from previous instructions */
-    flex-direction: row; /* Aligns input and buttons horizontally */
-    align-items: center; /* Aligns them vertically in the middle */
-    gap: 8px; /* Adds space between items in the row */
+    flex-direction: row;
+    align-items: center;
+    gap: 8px; 
 }
 
-/* Add padding and consistent styling to both buttons */
 .library__wrapper button {
-    padding: 10px 15px; /* Adds padding (top/bottom, left/right) */
-    /* Remove width: 100%; from previous instructions for 'column' layout */
+    padding: 10px 15px; 
     width: auto; 
     cursor: pointer;
 }
 
-/* Ensure the search input also aligns nicely with the buttons */
 #searchQuery {
     padding: 10px 15px;
-    /* max-width: 200px; <-- Optional: constrain width of input */
+    
 }
 
-/* Ensure the parent container still pushes everything to the right */
 .nav__wrapper {
     display: flex;
-    justify-content: space-between; /* Keeps title left, search area right */
+    justify-content: space-between; 
     align-items: center;
     width: 100%;
 }
 
 .nav__logo {
+    margin-left: 15px;
     width: 125px;
     height: auto;
 }
@@ -60,7 +56,8 @@ body {
 }
 
 .nav__title--text {
-    font-size: clamp(32px, 8vw, 48px); /* Fluid typography */
+    font-size: clamp(32px, 8vw, 48px);
+    margin-left: 115px;
     font-weight: bold;
     background: linear-gradient(to right, #ff7e5f, #feb47b, #86e3ce);
     -webkit-background-clip: text;
@@ -69,7 +66,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* --- Search Elements --- */
 .search__input-wrapper {
     display: flex;
     gap: 10px;
@@ -126,7 +122,7 @@ button:hover {
 #movieGrid img {
     width: 100%;
     max-width: 150px;
-    height: 225px; /* Fixed height for uniformity */
+    height: 225px; 
     border-radius: 8px;
     object-fit: cover;
     box-shadow: 0 4px 10px rgba(0,0,0,0.3);
